@@ -7,14 +7,14 @@ import Connection from './database/db.js';
 import Routes from './routes/routes.js';
 
 const app = express();
-// app.use(cors());
+app.use(cors());
 
 // Allow requests from the Netlify domain
-app.use(
-  cors({
-    origin: 'https://todosapp-mern.netlify.app/',
-  })
-);
+// app.use(
+//   cors({
+//     origin: 'https://todosapp-mern.netlify.app/',
+//   })
+// );
 
 app.use(express.json());
 
